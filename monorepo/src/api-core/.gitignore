@@ -1,0 +1,6 @@
+node_modules/
+.env
+docker/local-database/*
+!docker/local-database/.gitkeep
+dist
+.env.local

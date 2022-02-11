@@ -1,0 +1,8 @@
+components:
+  schemas:
+    ErrorCode:
+      type: string
+      enum:
+        - ACCESS_DENIED
+        - EMAIL_ALREADY_EXISTS
+        - EMPLOYEE_DOES_NOT_EXIST

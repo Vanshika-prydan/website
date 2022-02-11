@@ -1,0 +1,21 @@
+components:
+  schemas:
+    Address:
+      type: object
+      properties:
+        addressId:
+          type: string
+        street:
+          type: string
+        postalCode:
+          type: string
+        country:
+          type: string
+        postalCity:
+          type: string
+        addressName?: 
+          type: string
+        information?:
+          type: string
+        code:
+          type: string

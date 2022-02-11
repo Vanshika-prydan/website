@@ -1,0 +1,26 @@
+{
+  "builds": {
+    "android": {
+      "release": {
+        "workflow": "generic",
+        "env": {
+          "ENVIRONMENT": "production"
+        }
+      }
+    },
+    "ios": {
+      "release": {
+        "workflow": "generic",
+        "env": {
+          "ENVIRONMENT": "production"
+        }
+      },
+      "development": {
+        "workflow:":"managed",
+        "env": {
+          "ENVIRONMENT": "development"
+        }
+      }
+    }
+  }
+}

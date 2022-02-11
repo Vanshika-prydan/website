@@ -1,0 +1,14 @@
+components:
+  schemas:
+    Employee:
+      type: object
+      properties:
+        employeeId: 
+          type: string
+        account: 
+          $ref: "#/components/schemas/Account"
+        roles?: 
+          type: array
+          items:
+            $ref: "#/components/schemas/Role"
+        #address?: AddressModel | null;

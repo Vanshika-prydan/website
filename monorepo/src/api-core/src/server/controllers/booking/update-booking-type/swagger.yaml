@@ -1,0 +1,41 @@
+  /booking/booking-type/{bookingTypeId}:
+    put:
+      summary: updates a BookingType
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: bookingTypeId
+          type: string
+          required: true
+
+        - in: body
+          name: UpdateBookingTypeRequest
+          schema:
+            type: object
+            optional:
+              - name
+              - description
+            properties:
+              name?:
+                type: string
+              description?:
+                type: string
+
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/BookingType"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT
+        404:
+            description: ID_DOES_NOT_EXIST

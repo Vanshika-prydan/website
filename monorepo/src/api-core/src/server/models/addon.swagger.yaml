@@ -1,0 +1,16 @@
+components:
+  schemas:
+    Addon:
+      type: object
+      properties:
+        addonId:
+          type: string
+        name:
+          type: string
+        defaultTimeInMinutes:
+          type: string
+        description:
+          type: string
+        unit:
+          type: string
+          enum: [h,min,ea]

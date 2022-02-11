@@ -1,0 +1,18 @@
+  /account:
+    get:
+      summary: Gets a list of all accounts
+      
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Account"
+        401:
+            description: ACCESS_DENIED

@@ -1,0 +1,35 @@
+  /booking/frame-booking/{frameBookingId}:
+    patch:
+      summary: updates a frame booking
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: frameBookingId
+          type: string
+          required: true
+
+        - in: body
+          name: UpdateFrameBookingRequest
+          schema:
+            type: object
+            properties:
+              employeeId:
+                type: string
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/FrameBooking"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT
+        404:
+            description: ID_DOES_NOT_EXIST

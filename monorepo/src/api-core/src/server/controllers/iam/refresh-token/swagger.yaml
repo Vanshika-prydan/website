@@ -1,0 +1,17 @@
+  /iam/refresh-token:
+    post:
+      summary: Login and sets a cookie
+      consumes:
+        - application/json
+     
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/LoginResponse"

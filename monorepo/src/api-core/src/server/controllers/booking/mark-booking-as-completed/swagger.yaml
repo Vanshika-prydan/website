@@ -1,0 +1,26 @@
+/booking/complete/{bookingId}:
+  put:
+    summary: Updates a booking to completed and charges the customer
+    consumes:
+      - application/json
+    parameters:
+      - in: path
+        name: bookingId
+        type: string
+        required: true
+
+    produces:
+      - application/json
+    responses:
+      200:
+        description: OK
+        content:
+          application/json:
+            schema:
+              type: object
+              $ref: "#/components/schemas/Booking"
+
+      401:
+        description: ACCESS_DENIED
+      400:
+        description: INVALID_INPUT

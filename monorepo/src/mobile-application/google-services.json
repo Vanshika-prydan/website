@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "87505526559",
+    "project_id": "we-clean-green",
+    "storage_bucket": "we-clean-green.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87505526559:android:584214e1e5860fe0329a2a",
+        "android_client_info": {
+          "package_name": "se.cleangreen.wecleangreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87505526559-c8ejb7hmj3vjrlehapvvg12phu8gdeou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "se.cleangreen.wecleangreen",
+            "certificate_hash": "05b6da776a699d74cf40c4bae4bf385235846177"
+          }
+        },
+        {
+          "client_id": "87505526559-d20kachs1549bbrsnli4m5hmtjv0sp2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUEKmV0P1JFjaOyeWYub0I_gakiEPWBQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87505526559-d20kachs1549bbrsnli4m5hmtjv0sp2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

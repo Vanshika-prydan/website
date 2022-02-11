@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "title": "Services",
+    "urlLink": "",
+    "isSamePage": false,
+    "children": [
+      {
+        "id": 11,
+        "title": "Home",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 12,
+        "title": "cleaning Moving cleaning ",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 13,
+        "title": "Office cleaning",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Om oss",
+    "urlLink": "",
+    "isSamePage": false,
+    "children": [
+      {
+        "id": 21,
+        "title": "About us ",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 22,
+        "title": "How it works",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 23,
+        "title": "Frequently asked questions",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 24,
+        "title": "General conditions",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 25,
+        "title": "Become a Green Cleaner",
+        "urlLink": "mailto:info@cleangreen.se?subject=Become a Green Cleaner",
+        "isSamePage": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Contact",
+    "urlLink": "/#contact",
+    "target": "_self",
+    "children": []
+  }
+]

@@ -1,0 +1,31 @@
+components:
+  schemas:
+    FrameBooking:
+      type: object
+      properties:
+        frameBookingId:
+          type: string
+        customer:
+          $ref: "#/components/schemas/Customer"
+        startTime:
+          type: string
+        endTime?:
+          type: string
+        durationInMinutes:
+          type: number
+        occurrence: 
+          type: string
+        address:
+          $ref: "#/components/schemas/Address"
+        specialInstructions?:
+          type: string
+        privateNotes?:
+          type: string
+        employee:
+          $ref: "#/components/schemas/PublicEmployee"
+        bookingType:
+          $ref: "#/components/schemas/BookingType"
+        addons?:
+          type: array
+          items:
+            $ref: "#/components/schemas/BookingAddon"

@@ -1,0 +1,38 @@
+version: "3.7"
+services:
+  database:
+    container_name: database
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile.database
+    env_file:
+    - ./docker/database.env
+    restart: on-failure
+    ports: 
+    - 5432:5432
+
+  redis:
+    container_name: redis
+    image: "redis:alpine"
+    restart: "always"
+    hostname: redis
+    ports: 
+    - 6379:6379
+    volumes: 
+    -  ./redis/:/usr/local/etc/redis/
+
+  api-core:
+    container_name: "node-development"
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile.api-core
+    restart: "always"
+    environment: 
+      - DATABASE_HOST=database
+    ports: 
+      - 8080:8080
+    volumes: 
+      - ./src:/usr/src/api-core/src
+    depends_on: 
+      - database
+      - redis

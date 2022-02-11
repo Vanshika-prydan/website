@@ -1,0 +1,87 @@
+{
+    "HomeservicesBostadsrum": [
+      {
+        "id": 1,
+        "icon": "",
+        "title": "Damning av vågräta ytor",
+        "linkURL": "tel:08-30 74 14",
+        "target": "_self"
+      },
+      {
+        "id": 2,
+        "icon": "",
+        "title": "Dammsugning av mattor, golv och golvlister",
+        "linkURL": "",
+        "target": "_self"
+      },
+      {
+        "id": 3,
+        "icon": "",
+        "title": "Avtorkning av luckor, kontakter, lampknappar, foder, lister, dörrar och dörrhandtag",
+        "linkURL": "https://www.instagram.com/Wecleangreensweden/",
+        "target": "_blank"
+      }
+     
+    ],
+    "HomeservicesKökochmatplats": [
+      {
+        "id": 1,
+        "icon": "",
+        "title": "Hemstädning",
+        "linkURL": "#",
+        "target": "_self"
+      },
+      {
+        "id": 2,
+        "icon": "",
+        "title": "Flyttstädning",
+        "linkURL": "#",
+        "target": "_self"
+      },
+      {
+        "id": 3,
+        "icon": "",
+        "title": "Kontorsstädning",
+        "linkURL": "#",
+        "target": "_self"
+      }
+    ],
+    "HomeservicesBadrumochtoaletter": [
+      {
+        "id": 1,
+        "icon": "",
+        "title": "Om oss",
+        "linkURL": "#",
+        "target": "_self"
+      },
+      {
+        "id": 2,
+        "icon": "",
+        "title": "Så fungerar det",
+        "linkURL": "#",
+        "target": "_self"
+      },
+      {
+        "id": 3,
+        "icon": "",
+        "title": "Vanliga frågor",
+        "linkURL": "#",
+        "target": "_self"
+      },
+      {
+        "id": 4,
+        "icon": "",
+        "title": "Allmänna villkor",
+        "linkURL": "https://assets.cleangreen.se/privacy-policy.pdf",
+        "target": "_blank"
+      },
+      {
+        "id": 5,
+        "icon": "",
+        "title": "Bli en Green Cleaner",
+        "linkURL": "https://forms.gle/Bq38CbeTqgp5sh1G9",
+        "target": "_blank"
+      }
+    ]
+  }
+  

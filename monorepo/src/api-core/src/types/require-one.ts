@@ -1,0 +1,1 @@
+export type RequireOne<T, Attribute1 extends keyof T, Attribute2 extends keyof T> = (Partial<Pick<T, Attribute1>> & Required<Pick<T, Attribute2>>) | (Partial<Pick<T, Attribute2>> & Required<Pick<T, Attribute1>>);

@@ -1,0 +1,23 @@
+  /waiting-list:
+    post:
+      summary: Adds an email and postal code the the waiting list
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: WaitingListRequest
+          schema:
+            type: object
+            required:
+              - email
+              - postalCode
+            properties:
+              email:
+                type: string
+              postalCode:
+                type: string
+
+      produces:
+      responses:
+        200:
+          description: OK

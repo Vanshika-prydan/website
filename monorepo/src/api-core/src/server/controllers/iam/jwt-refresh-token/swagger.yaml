@@ -1,0 +1,26 @@
+  /iam/jwt-refresh-token:
+    post:
+      summary: Refresh token and receive jwt
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: RefreshRequest
+          schema:
+            type: object
+            required:
+              - refreshToken
+            properties:
+              refreshToken:
+                type: string
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/JWTResponse"

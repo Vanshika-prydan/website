@@ -1,0 +1,55 @@
+  /customer/add-address/{customerId}:
+    post:
+      summary: Creates and binds an address to a customer
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: customerId   
+          schema:
+            type: integer
+            minimum: 1
+          description: uuid
+        - in: body
+          name: Req
+          schema:
+            type: object
+            required:
+              - sreet
+              - postalCity
+              - postalCode
+              - country
+            properties:
+              street:
+                type: string
+              postalCode:
+                type: string
+              postalCity:
+                type: string
+              country:
+                type: string
+              information?:
+                type: string
+              code?:
+                type: string
+              addressName?:
+                type: string
+              numberOfBathrooms?: 
+                type: number
+              homeAreaInM2?:
+                type: number
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Customer"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: Bad input format

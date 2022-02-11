@@ -1,0 +1,56 @@
+name: PROD - deploy back office
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'src/frontend-admin/**'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'src/frontend-admin/**'
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: src/frontend-admin
+
+jobs:
+  deploy-backoffice-prod:
+    name: Deploy production back office 
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    strategy:
+      matrix:
+        node-version: [15.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: master
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Generating the environment file
+        run: cp .env.production .env
+
+      - name: Installing dependencies
+        run: npm ci
+
+      - name: Building the application
+        run: npm run build
+
+      - name: push to s3
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws configure set default.region eu-west-1
+          aws s3 rm s3://backoffice.cleangreen.se --recursive
+          aws s3 cp build s3://backoffice.cleangreen.se --recursive

@@ -1,0 +1,51 @@
+  /booking/frame-booking:
+    post:
+      summary: Creates a new Frame Booking
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: CreateBookingRequest
+          schema:
+            type: object
+            properties:
+              customerId?:
+                type: string
+              startTime:
+                type: string
+              endTime?:
+                type: string
+              durationInMinutes:
+                type: number
+              occurrence:
+                type: string
+              addressId:
+                type: string
+              privateNote:
+                type: string
+              specialInstructions:
+                type: string
+              bookingTypeId:
+                type: string
+              employeeId:
+                type: string
+              addonIds:
+                type: array
+                items: 
+                  type: string
+
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/FrameBooking"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT

@@ -1,0 +1,38 @@
+  /booking/{bookingId}/addons:
+    post:
+      summary: Adds addons to a booking
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: bookingId
+          type: string
+          required: true
+        - in: body
+          name: AddAddonsRequstBody
+          schema:
+            type: object
+            required:
+              - addonIds
+            properties:
+              addonIds:
+                type: array
+                items:
+                  type: string
+              
+
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Booking"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT

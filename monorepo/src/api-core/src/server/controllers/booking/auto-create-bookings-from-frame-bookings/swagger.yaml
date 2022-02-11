@@ -1,0 +1,12 @@
+  /booking/auto-create-bookings-from-frame-bookings:
+    post:
+      summary: This endpoint shall be used by a cron job to create bookings to the frame booking
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+        500:
+            description: Server error
+     

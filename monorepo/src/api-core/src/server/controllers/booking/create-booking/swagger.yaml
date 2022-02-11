@@ -1,0 +1,49 @@
+  /booking/:
+    post:
+      summary: Creates a new Booking
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: CreateBookingRequest
+          schema:
+            type: object
+            properties:
+              customerId?:
+                type: string
+              frameBookingId?:
+                type: string
+              startTime:
+                type: string
+              durationInMinutes:
+                type: number
+              addressId:
+                type: string
+              privateNote:
+                type: string
+              specialInstructions:
+                type: string
+              bookingTypeId:
+                type: string
+              employeeId:
+                type: string
+              addonIds:
+                type: array
+                items: 
+                  type: string
+
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Booking"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT

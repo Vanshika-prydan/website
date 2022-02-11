@@ -1,0 +1,10 @@
+components:
+  schemas:
+    Permission:
+      type: string
+      enum:
+        - EMPLOYEE_CREATE
+        - EMPLOYEE_UPDATE
+        - EMPLOYEE_LIST_ALL
+        - CUSTOMER_LIST_ALL
+        - CUSTOMER_ADD_AND_BIND_ADDRESS

@@ -1,0 +1,15 @@
+  /booking/booking-type:
+    get:
+      summary: Returns a list with all booking types
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/BookingType"

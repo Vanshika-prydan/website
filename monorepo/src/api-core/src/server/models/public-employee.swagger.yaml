@@ -1,0 +1,12 @@
+components:
+  schemas:
+    PublicEmployee:
+      type: object
+      properties:
+        employeeId:
+          type: string
+        firstName:
+          type: string
+        lastName:
+          type: string
+        

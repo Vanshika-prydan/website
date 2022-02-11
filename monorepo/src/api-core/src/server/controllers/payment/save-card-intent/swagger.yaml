@@ -1,0 +1,13 @@
+  /payment/save-card-intent:
+    post:
+      summary: Creates a card intent and returns a clientSecret
+     
+      produces:
+        - text/plain
+      responses:
+        201:
+          description: OK
+          content:
+            type: string
+        401:
+            description: ACCESS_DENIED

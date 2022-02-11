@@ -1,0 +1,11 @@
+components:
+  schemas:
+    Customer:
+      type: object
+      properties:
+        customerId: 
+          type: string
+        receiveMarketingCommunication:
+          type: boolean
+        account: 
+          $ref: "#/components/schemas/Account"

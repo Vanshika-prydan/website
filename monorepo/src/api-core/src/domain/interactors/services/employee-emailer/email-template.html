@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    Tid: ${format(b.startTime, 'HH:mm')} - ${format(b.endTime, 'HH:mm')}\n\n
+
+    <br>
+    <br>
+
+        Adress: ${b.address.street}, ${b.address.postalCode} ${b.address.postalCity}. \n
+        <br>
+
+        Kod: ${b.address.code ?? 'Ingen kod'}
+        <br><br>
+        Information: ${b.specialInstructions}\n\n
+<br>
+<br>
+        Kund: ${b.customer.account.firstName} ${b.customer.account.lastName} ${b.customer.account.email} ${b.customer.account.phoneNumber ?? ''} \n\n 
+        <br>
+        <br>
+
+        Typ av tjänst: ${b.bookingType.name}\n
+        <br><br>
+        Tillägg: ${b.addons?.map(a => `<br>-${a.addon.name}`) ?? 'Inga tillägg'} `;
+    
+</body>
+</html>

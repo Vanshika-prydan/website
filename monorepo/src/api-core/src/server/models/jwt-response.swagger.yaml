@@ -1,0 +1,16 @@
+components:
+  schemas:
+    JWTResponse:
+      type: object
+      properties:
+        refreshToken: 
+          type: string
+        accessToken:
+          type: string
+        account: 
+          type: object
+          $ref: "#/components/schemas/Account"
+        permissions:
+          type: array
+          items:
+            $ref: "#/components/schemas/Permission"

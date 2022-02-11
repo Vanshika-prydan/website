@@ -1,0 +1,25 @@
+  /employee/{employeeId}/default-availability:
+    get:
+      summary: Gets the default availability for a specific employee
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: employeeId
+          type: string
+          required: true
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  $ref: "#/components/schemas/EmployeeDefaultAvailability"
+        401:
+            description: ACCESS_DENIED

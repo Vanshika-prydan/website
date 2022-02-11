@@ -1,0 +1,41 @@
+  /employee:
+    post:
+      summary: Creates a new customer
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: EmployeeRequest
+          description: The user to create.
+          schema:
+            type: object
+            required:
+              - firstName
+              - lastName
+              - email
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+              email:
+                type: string
+              phoneNumber?:
+                type: string
+              roleNames?:
+                type: array
+                items:
+                  type: string
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Employee"
+        401:
+            description: ACCESS_DENIED

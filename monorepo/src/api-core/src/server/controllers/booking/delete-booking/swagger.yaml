@@ -1,0 +1,21 @@
+/booking/{bookingId}:
+  delete:
+    summary: Deletes a booking
+    consumes:
+      - application/json
+    parameters:
+      - in: path
+        name: bookingId
+        type: string
+        required: true
+
+    produces:
+      - application/json
+    responses:
+      200:
+        description: OK
+
+      401:
+        description: ACCESS_DENIED
+      400:
+        description: INVALID_INPUT

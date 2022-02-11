@@ -1,0 +1,18 @@
+components:
+  schemas:
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        errorCode:
+          type: string
+          schema:
+            $ref: "#/components/schemas/ErrorCode"
+        badParameters?:
+          type: array
+          items:
+            type: string
+        message?:
+          type: string
+          

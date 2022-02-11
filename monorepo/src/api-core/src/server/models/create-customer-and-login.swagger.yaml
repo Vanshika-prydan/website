@@ -1,0 +1,16 @@
+components:
+  schemas:
+    CreateCustomerAndLoginResponse:
+      type: object
+      properties:
+        refreshToken: 
+          type: string
+        accessToken:
+          type: string
+        customer: 
+          type: object
+          $ref: "#/components/schemas/Customer"
+        permissions:
+          type: array
+          items:
+            $ref: "#/components/schemas/Permission"

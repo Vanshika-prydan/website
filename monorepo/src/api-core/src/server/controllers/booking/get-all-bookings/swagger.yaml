@@ -1,0 +1,15 @@
+  /booking:
+    get:
+      summary: Returns a list with all bookings
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Booking"

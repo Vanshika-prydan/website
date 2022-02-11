@@ -1,0 +1,27 @@
+  /iam/forgotten-password/confirm:
+    post:
+      summary: Resets the password
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: ResetPasswordRequest
+          schema:
+            type: object
+            required:
+              - email
+              - password
+              - code
+            properties:
+              email:
+                type: string
+              code:
+                type: string
+              password:
+                type: string
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK

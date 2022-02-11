@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "title": "Tjänster",
+    "urlLink": "",
+    "isSamePage": false,
+    "children": [
+      {
+        "id": 11,
+        "title": "Hemstädning",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 12,
+        "title": "Flyttstädning",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 13,
+        "title": "Kontorsstädning",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Om oss",
+    "urlLink": "",
+    "isSamePage": false,
+    "children": [
+      {
+        "id": 21,
+        "title": "Om oss",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 22,
+        "title": "Så fungerar det",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 23,
+        "title": "Vanliga frågor",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 24,
+        "title": "Allmänna villkor",
+        "urlLink": "",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 25,
+        "title": "Bli en Green Cleaner",
+        "urlLink": "mailto:info@cleangreen.se?subject=Become a Green Cleaner",
+        "isSamePage": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Kontakt",
+    "urlLink": "/#contact",
+    "target": "_self",
+    "children": []
+  }
+]

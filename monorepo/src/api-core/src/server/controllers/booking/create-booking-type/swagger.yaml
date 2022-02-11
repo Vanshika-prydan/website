@@ -1,0 +1,31 @@
+  /booking/booking-type:
+    post:
+      summary: Creates a new BookingType
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: CreateBookingRequest
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+              description:
+                type: string
+
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/BookingType"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT

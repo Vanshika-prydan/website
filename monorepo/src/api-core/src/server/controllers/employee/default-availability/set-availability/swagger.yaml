@@ -1,0 +1,52 @@
+  /employee/{employeeId}/default-availability:
+    put:
+      summary: Sets the default availability for a specific employee
+      consumes:
+        - application/json
+      parameters:
+        - in: path
+          name: employeeId
+          type: string
+          required: true
+        - in: body
+          name: Request
+          description: The user to create.
+          schema:
+            type: object
+            properties:
+              availability:
+                type: array
+                items:
+                  type: object
+                  required:
+                    - day
+                    - startHour
+                    - endHour
+                  properties:
+                    day:
+                      type: string
+                      enum:
+                        $ref: "#/components/schemas/WeekDay"
+                    startHour:
+                      type: number
+                    startMinute?:
+                      type: number
+                    endHour:
+                      type: number
+                    endMinute?:
+                      type: number
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  $ref: "#/components/schemas/EmployeeDefaultAvailability"
+        401:
+            description: ACCESS_DENIED

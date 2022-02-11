@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "icon": "/images/homeclean-icon.png",
+    "image": "/images/Hemstad.jpg",
+    "title": "Ecological home cleaning",
+    "position": "left-bottom",
+    "description": [
+      "With home cleaning with We Clean Green, you give your home a hefty dose of extra love. If you book recurring cleanings, we make sure that one and the same employee returns to you. With knowledge of exactly how you want your home cleaned, we can focus on making you happy and your home shiny clean, just the way you want it. Always with organic cleaners and dedicated staff.",
+      "Home cleaning includes, among other things. wet drying and vacuuming of floors and carpets, cleaning of bathrooms and kitchens - walls and floors, cleaning of mirrors and kitchen doors. We can even fold laundry if you want."
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "/images/moving-cleaning-icon.png",
+    "image": "/images/Flyttstad.jpg",
+    "title": "Ecological moving cleaning",
+    "position": "right-top",
+    "description": [
+      "When you move out, it is extra important to hand over a shiny clean home. If you book a moving cleaning with We Clean Grean, you not only get the security of a guaranteed stain-free cleaning all the way to the top cabinet shelf — your ecological footprint will shine, as well.",
+      "Moving cleaning includes, among other things. wet drying and vacuuming of all floors, cleaning of walls and glass surfaces in bathrooms and kitchens, vacuuming and wet wiping of wardrobes, cabinets and wall-mounted furnishings as well as window cleaning, etc."
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "/images/office-cleaning-icon.png",
+    "image": "/images/Kontorsstad.jpg",
+    "title": "Ecological office cleaning",
+    "position": "left-top",
+    "description": [
+      "Today, it comes without saying that companies work to minimize their environmental impact and thus contribute to a sustainable society. With office cleaning from We Clean Green, your office cleaning fully shares those values. Both the cleaning agents and tools we use have the highest possible environmental adaptation and our dedicated staff are driven by the ambition to always do better. We’ll be active in making your company fullfill your commitments, which makes us a strong and committed resource that you can be proud of."
+    ],
+    "__COMMENT__":"The company cleaning is tailored to your needs and creates a clean and healthy workplace. With We Clean Green, you can sit back and enjoy work that in a brilliant way reflects your environmental focus."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Book cleaning and change times directly in the app."
+  },
+  {
+    "id": 2,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Chat directly with the person cleaning at your home, or someone at the head office."
+  },
+  {
+    "id": 3,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Manage payments and update info that the cleaner needs."
+  },
+  {
+    "id": 4,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Rate the cleaner - or give a little tip if you are super happy with the job done!"
+  }
+]

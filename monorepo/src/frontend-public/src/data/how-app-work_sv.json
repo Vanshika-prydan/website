@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Boka städning och ändra tider direkt i appen."
+  },
+  {
+    "id": 2,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Chatta direkt med den som städar hos dig, eller någon på huvudkontoret."
+  },
+  {
+    "id": 3,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Hantera betalningar och uppdatera info som städaren behöver."
+  },
+  {
+    "id": 4,
+    "image": "images/CG-circle.svg",
+    "title": "",
+    "description": "Ge städaren betyg - eller lite dricks om du är extra nöjd!"
+  }
+]

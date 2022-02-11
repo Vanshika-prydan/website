@@ -1,0 +1,21 @@
+  /iam/forgotten-password:
+    post:
+      summary: Sends a reset code to the account's email
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: ResetPasswordRequest
+          schema:
+            type: object
+            required:
+              - email
+            properties:
+              email:
+                type: string
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK

@@ -1,0 +1,13 @@
+components:
+  schemas:
+    Role:
+      type: object
+      properties:
+        name: 
+          type: string
+        permissions?: 
+          type: array
+          items:
+            $ref: "#/components/schemas/Permission"
+        description: 
+          type: string

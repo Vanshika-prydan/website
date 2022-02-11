@@ -1,0 +1,103 @@
+{
+  "FooterContact": [
+    {
+      "id": 1,
+      "icon": "",
+      "title": "08-30 74 14",
+      "linkURL": "tel:08-30 74 14",
+      "target": "_self"
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "hej@cleangreen.se",
+      "linkURL": "mailto:hej@cleangreen.se",
+      "target": "_self"
+    },
+    {
+      "id": 3,
+      "icon": "/images/CG-instagram.svg",
+      "title": "Instagram",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 4,
+      "icon": "/images/CG-facebook.svg",
+      "title": "Facebook",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 5,
+      "icon": "/images/CG-linkedin.svg",
+      "title": "LinkedIn",
+      "linkURL": "#",
+      "target": "_self"
+    }
+  ],
+  "FooterServices": [
+    {
+      "id": 1,
+      "icon": "",
+      "title": "Home cleaning",
+      
+
+
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "Moving cleaning",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 3,
+      "icon": "",
+      "title": "Office cleaning",
+      "linkURL": "#",
+      "target": "_self"
+    }
+  ],
+  "FooterAboutUs": [
+    {
+      "id": 1,
+      "icon": "About us",
+      "title": "",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "That is how it works",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    
+    {
+      "id": 3,
+      "icon": "",
+      "title": "common questions",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 4,
+      "icon": "",
+      "title": "Terms and Conditions",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 5,
+      "icon": "",
+      "title": "Become a Green Cleaner",
+      "linkURL": "mailto:info@cleangreen.se?subject=Become a Green Cleaner",
+      "target": "_self"
+    }
+  ]
+}

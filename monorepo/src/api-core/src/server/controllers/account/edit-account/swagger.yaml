@@ -1,0 +1,41 @@
+  /account:
+    put:
+      summary: Edit fields to an account
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: EditAddonRequestModel
+          schema:
+            type: object
+            required:
+              - accountId
+            optional:
+              - lastName
+              - firstName
+              - phoneNumber
+            properties:
+              accountId:
+                type: string
+              firstName?:
+                type: string
+              lastName?:
+                type: string
+              phoneNumber?:
+                type: string
+
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Account"
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT

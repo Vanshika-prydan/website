@@ -1,0 +1,12 @@
+components:
+  schemas:
+    LoginResponse:
+      type: object
+      properties:
+        account: 
+          type: object
+          $ref: "#/components/schemas/Account"
+        permissions:
+          type: array
+          items:
+            $ref: "#/components/schemas/Permission"

@@ -1,0 +1,22 @@
+components:
+  schemas:
+    EmployeeDefaultAvailability:
+      type: object
+      properties:
+        employeeId: 
+          type: string
+        day:
+          type: string
+          enum:
+            $ref: "#/components/schemas/WeekDay"
+        startHour:
+          type: number
+        endHour:
+          type: number
+        startMinute:
+          type: number
+        endMinute:
+          type: number
+        
+        
+        

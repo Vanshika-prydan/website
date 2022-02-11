@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "title": "Tjänster",
+    "urlLink": "#",
+    "isSamePage": false,
+    "children": [
+      {
+        "id": 11,
+        "title": "Hemstädning",
+        "urlLink": "/home-cleaning/index.html",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 12,
+        "title": "Flyttstädning",
+        "urlLink": "/move-out-cleaning/index.html",
+        "isSamePage": false,
+        "children": []
+      },
+      {
+        "id": 13,
+        "title": "Kontorsstädning",
+        "urlLink": "/office-cleaning/index.html",
+        "isSamePage": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Om oss",
+    "urlLink": "/#about-us",
+    "target": "_self",
+    "children": []
+  },  
+  {
+    "id": 22,
+    "title": "RUT-avdrag",
+    "urlLink": "/#how-it-works",
+    "target": "_self",
+    "children": []
+  },
+  {
+    "id": 24,
+    "title": "Allmänna villkor",
+    "urlLink": "/privacy-policy/index.html",
+    "target": "_self",
+    "children": []
+  },
+  {
+    "id": 25,
+    "title": "Bli en Green Cleaner",
+    "urlLink": "mailto:info@cleangreen.se?subject=Become a Green Cleaner",
+    "target": "_blank",
+    "children": []
+  }
+]

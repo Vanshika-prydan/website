@@ -1,0 +1,16 @@
+  /payment/card/{cardId}:
+    delete:
+      summary: Get all cards
+
+      parameters:
+      - in: path
+        name: cardId
+        type: string
+        required: true
+     
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+

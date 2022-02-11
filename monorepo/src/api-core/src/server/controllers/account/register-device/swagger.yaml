@@ -1,0 +1,27 @@
+  /account/device:
+    post:
+      summary: Register a device for push notifications
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: RegisterDeviceRequestModel
+          schema:
+            type: object
+            required:
+              - token
+            properties:
+              token:
+                type: string
+              
+
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+        401:
+            description: ACCESS_DENIED
+        400:
+            description: INVALID_INPUT

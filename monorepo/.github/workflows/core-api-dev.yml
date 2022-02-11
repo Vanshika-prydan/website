@@ -1,0 +1,71 @@
+name: DEV - deploy core api
+
+on:
+  push:
+    branches:
+      - development
+    paths:
+      - "src/api-core/**"
+  pull_request:
+    branches:
+      - development
+    paths:
+      - "src/api-core/**"
+#  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: src/api-core
+
+jobs:
+  deploy:
+    name: Deploy development core api
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET_DEVELOPMENT }}
+      DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD_DEVELOPMENT }}
+      START_USER_PASSWORD: ${{ secrets.NIKLAS_START_USER_PASSWORD }}
+      EXPO_ACCESS_TOKEN: ${{ secrets.EXPO_ACCESS_TOKEN }}
+    strategy:
+      matrix:
+        node-version: [15.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: development
+
+      - name: Load secrets to the environment variable
+        run: |
+          touch .env.secrets
+          echo DATABASE_PASSWORD="${{ secrets.DATABASE_PASSWORD_DEVELOPMENT }}" >> .env.secrets
+          echo JWT_SECRET="${{ secrets.JWT_SECRET_DEVELOPMENT }}" >> .env.secrets
+          echo START_USER_PASSWORD="${{ secrets.NIKLAS_START_USER_PASSWORD }}" >> .env.secrets
+          echo AWS_ACCESS_KEY_ID="${{secrets.AWS_ACCESS_KEY_ID}}" >> .env.secrets
+          echo AWS_SECRET_ACCESS_KEY="${{secrets.AWS_SECRET_ACCESS_KEY}}" >> .env.secrets
+          echo EXPO_ACCESS_TOKEN="${{secrets.EXPO_ACCESS_TOKEN}}" >> .env.secrets
+
+      - name: Load environment variables for development
+        run: |
+          cat .env.development
+          touch .env
+          cat .env.development >> .env
+          echo "\n" >> .env
+          cat .env.secrets >> .env
+        
+      - name: Overview of environment
+        run: cat .env
+
+      - name: Building docker image
+        run: docker build -t core_api .
+
+      - name: Upload to ECR
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws configure set default.region eu-west-1
+          aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin 620181086901.dkr.ecr.eu-north-1.amazonaws.com
+          docker tag core_api:latest 620181086901.dkr.ecr.eu-north-1.amazonaws.com/core_api:latest
+          docker push 620181086901.dkr.ecr.eu-north-1.amazonaws.com/core_api:latest

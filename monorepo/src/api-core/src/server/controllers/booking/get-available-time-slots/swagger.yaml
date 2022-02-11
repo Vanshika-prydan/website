@@ -1,0 +1,42 @@
+  /booking/available-time-slots/{durationInMinutes}:
+    post:
+      summary: Returns a list with available time slots
+
+      parameters:
+      - in: path
+        name: durationInMinutes
+        type: string
+        required: true
+      - in: body
+        name: Body
+        schema:
+          type: object
+          properties:
+            occurrence?:
+              type: string
+              enum:
+                - onetime
+                - weekly
+                - biweekly
+                - fourweekly
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                    type: object
+                    properties:
+                      timeSlot:
+                        type: string
+                      availableEmployees:
+                      schema:
+                        type: array
+                        items:
+                          $ref: "#/components/schemas/PublicEmployee"
+                      

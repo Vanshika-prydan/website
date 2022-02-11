@@ -1,0 +1,29 @@
+  /iam/login:
+    post:
+      summary: Login and sets a cookie
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: LoginRequest
+          schema:
+            type: object
+            required:
+              - email
+              - password
+            properties:
+              email:
+                type: string
+              password:
+                type: string
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/LoginResponse"

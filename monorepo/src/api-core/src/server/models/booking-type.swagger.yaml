@@ -1,0 +1,12 @@
+components:
+  schemas:
+    BookingType:
+      type: object
+      properties:
+        BookingTypeId:
+          type: string
+        name:
+          type: string
+        description?:
+          type: string
+          

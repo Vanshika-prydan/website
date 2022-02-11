@@ -1,0 +1,18 @@
+components:
+  schemas:
+    CreditCard:
+      type: object
+      properties:
+        id:
+          type: string
+        brand:
+          type: string
+        expMonth:
+          type: number
+        expYear:
+          type: number
+        last4:
+          type: string
+        isPrimary?:
+          type: boolean
+       

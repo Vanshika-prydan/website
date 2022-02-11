@@ -1,0 +1,99 @@
+{
+  "FooterContact": [
+    {
+      "id": 1,
+      "icon": "",
+      "title": "08-30 74 14",
+      "linkURL": "tel:08-30 74 14",
+      "target": "_self"
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "hej@cleangreen.se",
+      "linkURL": "mailto:hej@cleangreen.se",
+      "target": "_self"
+    },
+    {
+      "id": 3,
+      "icon": "/images/CG-instagram.svg",
+      "title": "Instagram",
+      "linkURL": "https://www.instagram.com/Wecleangreensweden/",
+      "target": "_blank"
+    },
+    {
+      "id": 4,
+      "icon": "/images/CG-facebook.svg",
+      "title": "Facebook",
+      "linkURL": "https://www.facebook.com/wecleangreensweden",
+      "target": "_blank"
+    },
+    {
+      "id": 5,
+      "icon": "/images/CG-linkedin.svg",
+      "title": "LinkedIn",
+      "linkURL": "https://www.linkedin.com/company/we-clean-green-sweden",
+      "target": "_blank"
+    }
+  ],
+  "FooterServices": [
+    {
+      "id": 1,
+      "icon": "",
+      "title": "Hemstädning",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "Flyttstädning",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 3,
+      "icon": "",
+      "title": "Kontorsstädning",
+      "linkURL": "#",
+      "target": "_self"
+    }
+  ],
+  "FooterAboutUs": [
+    {
+      "id": 1,
+      "icon": "",
+      "title": "Om oss",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 2,
+      "icon": "",
+      "title": "Så fungerar det",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 3,
+      "icon": "",
+      "title": "Vanliga frågor",
+      "linkURL": "#",
+      "target": "_self"
+    },
+    {
+      "id": 4,
+      "icon": "",
+      "title": "Allmänna villkor",
+      "linkURL": "https://assets.cleangreen.se/privacy-policy.pdf",
+      "target": "_blank"
+    },
+    {
+      "id": 5,
+      "icon": "",
+      "title": "Bli en Green Cleaner",
+      "linkURL": "mailto:info@cleangreen.se?subject=Become a Green Cleaner",
+      "target": "_blank"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+src/mobile-application/android/app/debug/app-debug.aab
+src/mobile-application/android/app/release/app-release.aab
+src/infrastructure/.terraform
+src/infrastructure/workspaces/main/.terraform
+src/infrastructure/*/.terraform.lock.hcl
+src/infrastructure/modules/niklas/.terraform
+src/infrastructure/modules/staging/.terraform
+src/infrastructure/workspaces/main/.terraform.lock.hcl
+src/infrastructure/modules/niklas/.terraform.lock.hcl
+src/infrastructure/modules/staging/.terraform.lock.hcl
+.dccache

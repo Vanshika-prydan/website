@@ -1,0 +1,33 @@
+  /iam/password:
+    patch:
+      summary: Updates the password
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: UpdatePasswordRequst
+          schema:
+            type: object
+            required:
+              - newPassword
+              - oldPassword
+            
+            properties:
+              oldPassword:
+                type: string
+              newPassword:
+                type: string
+
+
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          
+        401:
+            description: ACCESS_DENIED
+        403:
+            description: WRONG_PASSWORD
+        400:
+            description: INVALID_INPUT

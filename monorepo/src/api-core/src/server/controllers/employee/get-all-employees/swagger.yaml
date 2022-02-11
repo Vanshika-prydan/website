@@ -1,0 +1,15 @@
+  /employee:
+    get:
+      summary: Returns a list of all employees
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Employee"
+        401:
+            description: ACCESS_DENIED

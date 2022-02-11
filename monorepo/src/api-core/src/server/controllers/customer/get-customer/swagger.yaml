@@ -1,0 +1,18 @@
+  /customer/{customerId}:
+    get:
+      summary: Returns a customer from a customer id
+      parameters:
+        - in: path
+          name: customerId   
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/Customer"
+        401:
+            description: ACCESS_DENIED

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "icon": "/images/homeclean-icon.png",
+    "image": "/images/Hemstad.jpg",
+    "title": "Ekologisk hemstädning",
+    "position": "left-bottom",
+    "description": [
+      "Med hemstädning med We Clean Green ger du ditt hem en rejäl dos extra kärlek. Bokar du återkommande städningar, ser vi till att en och samma medarbetare återkommer till dig. Med kunskap om hur just du vill ha ditt hem städat, kan vi fokusera på att göra dig nöjd och ditt hem skinande rent, precis som du vill ha det. Alltid med ekologiska rengöringsmedel och engagerad personal."
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "/images/moving-cleaning-icon.png",
+    "image": "/images/Flyttstad.jpg",
+    "title": "Ekologisk flyttstädning",
+    "position": "right-top",
+    "description": [
+      "När du flyttar är det extra viktigt att lämna över ett glänsande rent hem. Bokar du en flyttstädning med We Clean Green får du inte bara tryggheten i en garanterat fläckfri städning ända in i översta skåphyllan - ditt ekologiska fotavtryck kommer att glänsa, det också.",
+      "I flyttstädning ingår bl.a. våttorkning och dammsugning av alla golv, städning av väggar och glasytor i badrum och kök, dammsugning och våttorkning av garderober, skåp och väggfast inredning samt fönsterputs m.m."
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "/images/office-cleaning-icon.png",
+    "image": "/images/Kontorsstad.jpg",
+    "title": "Ekologisk kontorsstädning",
+    "position": "left-top",
+    "description": [
+      "Idag är det självklart att företag arbetar för att minimera sin miljöpåverkan och bidra till ett uthålligt samhälle. Med kontorsstädning från We Clean  Green delar er kontorsstädning de värderingarna fullt ut. Både rengöringsmedel och redskap vi använder har högsta möjliga miljöanpassning och våra engagerade medarbetare drivs av viljan att bli ännu bättre. Det gör oss till en stark och engagerad resurs i företagets miljöarbete som ni kan vara stolta över."
+    ],
+    "__COMMENT__":"Företagets städning skräddarsys utifrån era behov och skapar en ren och frisk arbetsplats. Med We Clean Green kan ni luta er tillbaka och njuta av ett arbete som på ett glänsande sätt speglar ert miljöfokus."
+  }
+]

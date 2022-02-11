@@ -1,0 +1,16 @@
+  /customer:
+    get:
+      summary: Returns a list of all customers
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Customer"
+        401:
+            description: ACCESS_DENIED

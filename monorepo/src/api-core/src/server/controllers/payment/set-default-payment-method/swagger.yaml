@@ -1,0 +1,16 @@
+  /payment/default-card/{cardId}:
+    post:
+      summary: Update default card
+      consumes:
+        - application/json
+      parameters:
+      - in: path
+        name: cardId
+        type: string
+        required: true
+     
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK

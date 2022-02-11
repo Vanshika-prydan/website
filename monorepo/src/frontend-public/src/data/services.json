@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "icon": "/images/homeclean-icon.png",
+    "image": "/images/Hemstad.jpg",
+    "title": "Ekologisk",
+    "subtitle": "Hemstädning",
+    "position": "left-bottom",
+    "pageURL":"/home-cleaning/index.html",
+    "slug":"home-cleaning",
+    "description": [
+      "Med hemstädning med We Clean Green ger du ditt hem en rejäl dos extra kärlek. Vi skräddarsyr städningen så att du får den precis som du vill ha den. Alltid med ekologiska rengöringsmedel och engagerad personal. Bokar du återkommande städningar, ser vi till att en och samma medarbetare återkommer till dig."
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "/images/moving-cleaning-icon.png",
+    "image": "/images/Flyttstad.jpg",
+    "title": "Ekologisk",
+    "subtitle": "Flyttstädning",
+    "position": "right-top",
+    "pageURL":"/move-out-cleaning/index.html",
+    "slug":"move-out-cleaning",
+    "description": [
+      "När du flyttar är det extra viktigt att lämna över ett glänsande rent hem. Med flyttstädning från We Clean Green får du inte bara tryggheten i en garanterat fläckfri städning ända in i översta skåphyllan - ditt ekologiska fotavtryck kommer att glänsa, det också."
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "/images/office-cleaning-icon.png",
+    "image": "/images/Kontorsstad.jpg",
+    "title": "Ekologisk",
+    "subtitle": "Kontorsstädning",
+    "position": "left-top",
+    "pageURL":"/office-cleaning/index.html",
+    "slug": "office-cleaning",
+    "description": [
+      "Idag är det självklart att företag minimerar miljöpåverkan och bidrar till ett uthålligt samhälle. Med kontorsstädning från We Clean Green skaffar ni en stark och engagerad resurs i företagets miljöarbete som ni kan vara stolta över. Städningen skräddarsys utifrån era behov och skapar en ren och frisk arbetsplats"
+    ],
+    "__COMMENT__": "Företagets städning skräddarsys utifrån era behov och skapar en ren och frisk arbetsplats. Med We Clean Green kan ni luta er tillbaka och njuta av ett arbete som på ett glänsande sätt speglar ert miljöfokus."
+  }
+]

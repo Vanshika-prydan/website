@@ -1,0 +1,45 @@
+  /customer/create-customer-and-login:
+    post:
+      summary: Creates a new customer and returns jwt tokens
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: CustomerRequest
+          schema:
+            type: object
+            required:
+              - firstName
+              - lastName
+              - email
+              - personalIdentityNumber
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+              email:
+                type: string
+              phoneNumber:
+                type: string
+              receiveMarketingCommunication?:
+                type: boolean
+              password?:
+                type: string
+              personalIdentityNumber:
+                type: string
+
+      produces:
+        - application/json
+      responses:
+        201:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                $ref: "#/components/schemas/CreateCustomerAndLoginResponse"
+        409:
+            description: EMAIL_ALREADY_EXISTS, CONSTRAINT_VIOLATED, PERSONAL_IDENTITY_NUMBER_ALREADY_EXISTS, PHONE_NUMBER_ALREADY_EXISTS
+        400:
+            description: Bad input format
